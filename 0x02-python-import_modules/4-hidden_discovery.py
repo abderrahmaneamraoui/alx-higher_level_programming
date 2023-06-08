@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import importlib.util
 
 if __name__ == "__main__":
