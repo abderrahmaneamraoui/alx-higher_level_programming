@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-import builtins; builtins.__dict__['p'+'rint']("#pythoniscool")
+import sys; sys.stdout.write("#pythoniscool\n")
