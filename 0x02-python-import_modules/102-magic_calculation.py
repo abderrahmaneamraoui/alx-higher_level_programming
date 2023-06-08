@@ -1,12 +1,7 @@
-#!/usr/bin/paython3
-def magic_calculation(a, b):
-    add = lambda x, y: x + y
-    sub = lambda x, y: x - y
+from magic_calculation import magic_calculation
 
-    if a < b:
-        c = add(a, b)
-        for i in range(4, 7):
-            c = add(c, i)
-        return c
-    else:
-        return sub(a, b)
+result = magic_calculation(3, 7)
+print(result)  # expected output: 25
+
+result = magic_calculation(10, 5)
+print(result)  # expected output: 5
