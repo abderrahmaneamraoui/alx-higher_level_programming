@@ -1,7 +1,7 @@
-#!/usr/bin/python3
+#!/usr/bin/paython3
 def magic_calculation(a, b):
-    add = __import__('magic_calculation_102').add
-    sub = __import__('magic_calculation_102').sub
+    add = lambda x, y: x + y
+    sub = lambda x, y: x - y
 
     if a < b:
         c = add(a, b)
