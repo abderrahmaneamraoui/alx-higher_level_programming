@@ -1,7 +1,11 @@
-from magic_calculation import magic_calculation
+#!/usr/bin/python3
+from magic_calculation_102 import add, sub
 
-result = magic_calculation(3, 7)
-print(result)  # expected output: 25
-
-result = magic_calculation(10, 5)
-print(result)  # expected output: 5
+def magic_calculation(a, b):
+    if a < b:
+        c = add(a, b)
+        for i in range(4, 6):
+            c = add(c, i)
+        return c
+    else:
+        return sub(a, b)
